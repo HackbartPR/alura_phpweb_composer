@@ -6,6 +6,12 @@ use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 use HackbartPR\BuscadorDeCursos\Buscador;
 
+//Classmap
+Util::showMessage();
+//Filesmap
+firstTesteMessage();
+secondTesteMessage();
+
 $client = new Client(['verify' => false]);
 $crawler = new Crawler();
 

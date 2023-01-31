@@ -16,6 +16,12 @@
     "autoload": {
         "psr-4": {
             "HackbartPR\\BuscadorDeCursos\\": "src/"
-        }
+        },
+        "classmap": [
+            "./src/utils/Util.php"
+        ],
+        "files": [
+            "./src/functions/functions.php"
+        ]
     }
 }
