@@ -10,18 +10,18 @@ class Buscador
 {
     private $client;
     private $crawler;
-     
+
     public function __construct(ClientInterface $client, Crawler $crawler)
-    {   
+    {
         $this->client = $client;
-        $this->crawler = $crawler;    
+        $this->crawler = $crawler;
     }
 
     public function getCursos(string $url, string $cssSelector): array
     {
         $response = $this->client->request('GET', $url);
 
-        if($response->getStatusCode() !== 200){
+        if ($response->getStatusCode() !== 200) {
             return ['URL não encontrada'];
         }
 
@@ -29,7 +29,7 @@ class Buscador
         $domElements = $this->crawler->filter($cssSelector);
 
         $cursos = [];
-        foreach($domElements as $element) {
+        foreach ($domElements as $element) {
             $cursos[] = $element->textContent;
         }
 
