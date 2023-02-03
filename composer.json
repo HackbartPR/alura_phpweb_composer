@@ -39,6 +39,6 @@
             "@add",
             "@commit -- $1"
         ],
-        "push" : "phpcs --standard=PSR12 src\\ && phan --allow-polyfill-parser && git add . && git commit -m '$1' && git push"
+        "push" : "phpcs --standard=PSR12 src\\ && phan --allow-polyfill-parser && git add . && git commit -m  && git push origin main"
     }
 }
