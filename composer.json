@@ -32,7 +32,7 @@
         "phpcs" : "phpcs --standard=PSR12 src\\",
         "phan" : "phan --allow-polyfill-parser",
         "add" : "git add .",
-        "commit": "git commit -m '$argv[1]'",
+        "commit": "git commit -m ",
         "check" : [
             "@phan",
             "@phpcs"
