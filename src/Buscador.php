@@ -2,7 +2,10 @@
 
 namespace HackbartPR\BuscadorDeCursos;
 
-require 'vendor/autoload.php';
+// phpcs:disable
+require __DIR__ . '/../vendor/autoload.php';
+// phpcs:enable
+
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
