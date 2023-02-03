@@ -33,14 +33,12 @@
         "phan" : "phan --allow-polyfill-parser",
         "add" : "git add .",
         "commit": "git commit -m \"$1\"",
-        "push" : "git push",
         "check" : [
             "@phpcs",
             "@phan",
             "@add",
-            "@commit $1",
-            "@push"
+            "@commit $1"
         ],
-        "send" : "phpcs --standard=PSR12 src\\ && phan --allow-polyfill-parser && git add . && git commit -m \"$1\" && git push"
+        "push" : "phpcs --standard=PSR12 src\\ && phan --allow-polyfill-parser && git add . && git commit -m \"$1\" && git push"
     }
 }
